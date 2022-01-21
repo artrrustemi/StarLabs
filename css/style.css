@@ -274,7 +274,7 @@ li span {
 
 .six-container {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-color: var(--fifth-color);
   text-align: center; }
   .six-container .video {
@@ -334,3 +334,201 @@ li span {
     opacity: 1; }
   100% {
     transform: scale(1.5); } }
+
+.txt-under-video-div {
+  width: 52%;
+  margin: 0 auto; }
+  .txt-under-video-div .txt-under-video {
+    font-family: 'Open Sans';
+    color: var(--fourth-color);
+    font-weight: normal; }
+
+.seven-section {
+  text-align: center;
+  height: 100vh; }
+  .seven-section h3 {
+    color: var(--main-color);
+    font-family: var(--main-color);
+    font-family: 'Open Sans'; }
+  .seven-section h1 {
+    color: var(--black);
+    font-family: 'Open Sans'; }
+  .seven-section .payment-package-section {
+    width: 100%;
+    height: 50%;
+    display: flex; }
+    .seven-section .payment-package-section .payment-package-card {
+      margin: 0 auto;
+      border: solid 1px var(--lightGrey);
+      width: 22%;
+      height: 100%;
+      border-radius: 0.5rem; }
+      .seven-section .payment-package-section .payment-package-card .card-details {
+        display: inline; }
+        .seven-section .payment-package-section .payment-package-card .card-details h1 {
+          display: block;
+          font-family: 'Open Sans';
+          font-size: 16px;
+          font-weight: normal; }
+      .seven-section .payment-package-section .payment-package-card .card-txt {
+        width: 80%;
+        height: 40%;
+        background-color: white;
+        margin: 0 auto;
+        border-bottom: solid 1px var(--lightGrey); }
+        .seven-section .payment-package-section .payment-package-card .card-txt h2 {
+          padding-top: 20px;
+          color: var(--main-color);
+          font-family: 'Open Sans'; }
+        .seven-section .payment-package-section .payment-package-card .card-txt h1 {
+          color: var(--black);
+          font-family: 'Open Sans';
+          font-size: 40px;
+          margin-bottom: 0; }
+        .seven-section .payment-package-section .payment-package-card .card-txt h3 {
+          color: var(--fourth-color);
+          font-family: 'Open Sans';
+          margin: 0;
+          padding: 0; }
+  .seven-section .slider-bottom {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex; }
+    .seven-section .slider-bottom .sliderImg {
+      text-align: left; }
+      .seven-section .slider-bottom .sliderImg img {
+        width: 175px;
+        border-radius: 100%; }
+    .seven-section .slider-bottom .slider-txt {
+      text-align: left;
+      padding-left: 30px; }
+      .seven-section .slider-bottom .slider-txt h1 {
+        font-size: 20px;
+        font-style: italic;
+        color: var(--fourth-color);
+        font-weight: normal;
+        font-family: 'Open Sans'; }
+      .seven-section .slider-bottom .slider-txt h2 {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: 'Open Sans';
+        font-weight: bold; }
+
+.active {
+  background-color: #717171; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.dispalyflex {
+  display: flex !important; }
+
+.eighth-section {
+  width: 100%;
+  height: 50vh; }
+  .eighth-section .contacform {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    background-color: var(--fifth-color);
+    border-radius: 1rem;
+    text-align: center; }
+    .eighth-section .contacform .contact-txt {
+      width: 57%;
+      margin: 0 auto; }
+      .eighth-section .contacform .contact-txt p {
+        padding-top: 30px;
+        color: var(--main-color);
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 13px; }
+      .eighth-section .contacform .contact-txt h1 {
+        color: var(--black);
+        font-family: 'Open Sans'; }
+      .eighth-section .contacform .contact-txt input {
+        width: 80%;
+        height: 50px;
+        border: solid 1px var(--lightGrey);
+        border-radius: 0.2rem;
+        padding-left: 20px; }
+      .eighth-section .contacform .contact-txt .privacyPolicy {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+        align-items: center; }
+        .eighth-section .contacform .contact-txt .privacyPolicy h1 {
+          font-size: 10px; }
+        .eighth-section .contacform .contact-txt .privacyPolicy input {
+          margin: 0;
+          width: 20px; }
+      .eighth-section .contacform .contact-txt .emailButton {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        border-radius: 3rem;
+        color: var(--secondary-color);
+        font-family: 'Open Sans';
+        background-color: var(--main-color); }
+
+.socialmedia {
+  padding-top: 50px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--main-color); }
+  .footer .footer-info {
+    width: 65%;
+    height: 60%;
+    margin: 0 auto;
+    border-bottom: solid 1px var(--fifth-color);
+    display: flex; }
+    .footer .footer-info .footer-section {
+      width: 30%;
+      margin: 0 auto; }
+      .footer .footer-info .footer-section h1 {
+        color: var(--secondary-color);
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 30px; }
+      .footer .footer-info .footer-section h2 {
+        color: var(--secondary-color);
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 15px; }
+      .footer .footer-info .footer-section ul {
+        list-style-type: square; }
+        .footer .footer-info .footer-section ul li {
+          color: var(--secondary-color);
+          font-family: 'Open Sans';
+          font-weight: bold;
+          font-size: 15px; }
+  .footer .copyright {
+    width: 100%;
+    text-align: center; }
+    .footer .copyright h1 {
+      color: var(--fifth-color);
+      font-family: 'Open Sans';
+      font-size: 15px;
+      font-weight: normal; }
