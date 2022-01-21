@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w sass/ -o css/ --recursive"
-    },
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
