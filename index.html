@@ -13,14 +13,14 @@
     <title>Tivo</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <img src="./images/logo.svg" alt="">
         <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">DETAILS</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li><a href="#">PRICING</a></li>
+            <li><a href="#4">FEATURES</a></li>
+            <li><a href="#5">DETAILS</a></li>
+            <li><a href="#6">VIDEO</a></li>
+            <li><a href="#7">PRICING</a></li>
             <li><a href="#" class="loginBtn">LOGIN</a></li>
         </ul>
     </div>
@@ -31,9 +31,10 @@
                 <p>Use Tivo to automate your marketing actions in order to reach a much larger audience</p>
                 <a href="" class="signup">SIGN UP</a>
             </div>
-            <img src="./images/header-software-app.png" alt="" class="header-img">
+            <img src="./images/header-software-app.png" alt="" class="header-img" >
         </div>
     </div>
+    <button onclick="topFunction2()" id="myBtn" title="Go to top">^</button>
     <svg viewBox="0 0 1920 310" class="svg" xmlns="http://www.w3.org/2000/svg">
         <path  fill="var(--main-color)" stroke="none" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z" stroke="black" fill="transparent"/>
     </svg>
@@ -114,7 +115,7 @@
             </div>   
         </div>
         
-        <div class="fourth-section">
+        <div class="fourth-section" id="4">
             <div class="fourth-section-txt">
                 <p>FEATURES</p>
                 <h1>Marketing Automation</h1>
@@ -122,7 +123,7 @@
             </div>
             <div class="container">
                 <div class="menu">
-                    <div class="menu-item"><i class='bx bx-list-ul' style="font-size:30px; padding-right: 5px; margin-top: 5px;"></i> List Builder</div>
+                    <div class="menu-item activeMenu"><i class='bx bx-list-ul' style="font-size:30px; padding-right: 5px; margin-top: 5px;"></i> List Builder</div>
                     <div class="menu-item"><i class='bx bx-mail-send'></i> Campaigns</div>
                     <div class="menu-item"><i class="fa fa-bar-chart" style="font-size:20px; padding-right: 5px;"></i>Analytics</div>
                 </div>
@@ -141,7 +142,7 @@
                             <li><span>  Manage forms and landing pages for your services</span></li>
                             <li><span> Add and remove subscribers using the control panel</span></li>
                         </ul>
-                        <div class="lightboxBtn">LIGHTBOX</div>
+                        <div class="button">LIGHTBOX</div>
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@
             
         </div>
         <div class="container2">
-            <div class="fifth-section">
+            <div class="fifth-section" id="5">
                 <div class="fifth-section-txt">
                     <h1>Now Is The Time To Upgrade Your Marketing Solution</h1>
                     <p>Target the right customers for your business with the help of Tivo's patented segmentation technology and deploy efficient marketing campaigns. Keep your customers happy and loyal.</p>
@@ -157,7 +158,7 @@
                         <li><span> Understand customers and meet their requirements</span></li>
                         <li><span> Targeted client base with Tivo's efficient technology</span></li>
                     </ul>
-                    <div class="signUpBtn">SIGNUP</div>
+                    <div class="button">SIGN UP</div>
                 </div>
 
                 <div class="fifth-section-img">
@@ -165,7 +166,7 @@
                 </div>
             </div>
         </div>
- <div class="six-container">
+ <div class="six-container" id="6">
         <div class="container2" style="padding-top: 100px;">
            
                 <div class="video">
@@ -180,7 +181,7 @@
         </div>
 
         <div class="container2">
-            <div class="seven-section">
+            <div class="seven-section" id="7">
                 <div class="seven-section-txt">
                     <h3>PRICING</h3>
                     <h1>Pricing Options Table</h1>
@@ -202,6 +203,7 @@
                             <h1><i class='bx bx-x' style='color:#555555  ; font-weight: bold;'  ></i> List Building And Cleaning</h1>
                             <h1><i class='bx bx-x' style='color:#555555 ; font-weight: bold;'  ></i> Collected Data Reports</h1>
                             <h1><i class='bx bx-x' style='color:#555555 ; font-weight: bold;'  ></i> Planning And Evaluation</h1>
+                            <div class="buttonCenter">SIGN UP</div>
                         </div>
 
                     </div>
@@ -217,6 +219,7 @@
                             <h1><i class='bx bx-check' style='color:#5f4dee ; font-weight: bold;'  ></i> List Building And Cleaning</h1>
                             <h1><i class='bx bx-x' style='color:#555555 ; font-weight: bold;'  ></i> Collected Data Reports</h1>
                             <h1><i class='bx bx-x' style='color:#555555 ; font-weight: bold;'  ></i> Planning And Evaluation</h1>
+                            <div class="buttonCenter">SIGN UP</div>
                         </div>
                     </div>
                     <div class="payment-package-card">
@@ -231,6 +234,7 @@
                             <h1><i class='bx bx-check' style='color:#5f4dee ; font-weight: bold;'  ></i> List Building And Cleaning</h1>
                             <h1><i class='bx bx-check' style='color:#5f4dee ; font-weight: bold;'  ></i> Collected Data Reports</h1>
                             <h1><i class='bx bx-check' style='color:#5f4dee ; font-weight: bold;'  ></i> Planning And Evaluation</h1>
+                            <div class="buttonCenter">SIGN UP</div>
                         </div>
                     </div>
                 </div>
@@ -238,7 +242,7 @@
                     <div class="dispalyflex">
                         <div class="mySlides fade">
                             <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ; padding-top: 30px;" onclick="plusSlides(-1)"></i>
-                            <div class="sliderImg">
+                            <div class="slider2Img">
                                 <img src="./images/testimonial-1.jpg" alt="">
                             </div>
                             <div class="slider-txt">
@@ -247,11 +251,11 @@
                             </div>
                             <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal;   height: 100%; margin: auto 0 ;  padding-top: 25px;" onclick="plusSlides(1)"></i>
                         </div>
-                    </div>
+                   
 
                     <div class="mySlides fade">
                         <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;" onclick="plusSlides(-1)"></i>
-                        <div class="sliderImg">
+                        <div class="slider2Img">
                             <img src="./images/testimonial-2.jpg" alt="">
                         </div>
                         <div class="slider-txt">
@@ -263,7 +267,7 @@
 
                     <div class="mySlides fade">
                         <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;" onclick="plusSlides(-1)"></i>
-                        <div class="sliderImg">
+                        <div class="slider2Img">
                             <img src="./images/testimonial-3.jpg" alt="">
                         </div>
                         <div class="slider-txt">
@@ -275,7 +279,7 @@
 
                     <div class="mySlides fade">
                         <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;"onclick="plusSlides(-1)"></i>
-                        <div class="sliderImg">
+                        <div class="slider2Img">
                             <img src="./images/testimonial-4.jpg" alt="">
                         </div>
                         <div class="slider-txt">
@@ -284,7 +288,7 @@
                         </div>
                         <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ; padding-top: 25px;" ></i>
                     </div>
-
+                </div>
                 </div>
             </div>
         </div>
@@ -365,5 +369,37 @@
             slides[slideIndex-1].style.display = "flex";  
             // dots[slideIndex-1].className += " active";
             setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+        scrollFunction2()
+        };
+
+        function scrollFunction2() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction2() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.marginTop = "-10px";
+            document.getElementById("navbar").style.transition = "0.1s ease";
+        } else {
+            document.getElementById("navbar").style.marginTop = "15px";
+            document.getElementById("navbar").style.transition = "0.2s ease";
+        }
         }
 </script>
