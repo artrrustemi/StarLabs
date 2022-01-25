@@ -13,6 +13,10 @@
     <title>Tivo</title>
 </head>
 <body>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+        <i class="fa fa-bars"  style="display: block; text-decoration: none;" id="hamburger-menu"></i>
+        <i class="fa fa-times"  style="display: none;" id="x" ></i>
+    </a>
     <div class="navbar" id="navbar">
         <img src="./images/logo.svg" alt="">
         <ul>
@@ -24,6 +28,7 @@
             <li><a href="#" class="loginBtn">LOGIN</a></li>
         </ul>
     </div>
+    
     <div class="main-section">
         <div class="container">
             <div class="text-container">
@@ -166,7 +171,7 @@
                 </div>
             </div>
         </div>
- <div class="six-container" id="6">
+ <div class="sixth-section" id="6">
         <div class="container2" style="padding-top: 100px;">
            
                 <div class="video">
@@ -181,7 +186,7 @@
         </div>
 
         <div class="container2">
-            <div class="seven-section" id="7">
+            <div class="seventh-section" id="7">
                 <div class="seven-section-txt">
                     <h3>PRICING</h3>
                     <h1>Pricing Options Table</h1>
@@ -346,60 +351,7 @@
         
 </body>
 </html>
-<script>
+<script src="./js/main.js">
 
-    var slideIndex = 1;
-    showSlides();
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        // var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        // for (i = 0; i < dots.length; i++) {
-        //     dots[i].className = dots[i].className.replace(" active", "");
-        // }
-            slides[slideIndex-1].style.display = "flex";  
-            // dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-
-        var mybutton = document.getElementById("myBtn");
-
-        window.onscroll = function() {
-        scrollFunction2()
-        };
-
-        function scrollFunction2() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction2() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("navbar").style.marginTop = "-10px";
-            document.getElementById("navbar").style.transition = "0.1s ease";
-        } else {
-            document.getElementById("navbar").style.marginTop = "15px";
-            document.getElementById("navbar").style.transition = "0.2s ease";
-        }
-        }
+   
 </script>

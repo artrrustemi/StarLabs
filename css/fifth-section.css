@@ -1,0 +1,21 @@
+li {
+  color: var(--main-color); }
+
+li span {
+  color: var(--fourth-color); }
+
+.fifth-section {
+  margin-top: 100px;
+  width: 100%;
+  display: flex; }
+  .fifth-section .fifth-section-txt h1 {
+    color: var(--black);
+    font-family: 'Open Sans'; }
+  .fifth-section .fifth-section-txt p {
+    color: var(--fourth-color);
+    font-family: 'Open Sans'; }
+  .fifth-section .fifth-section-txt li {
+    list-style-type: square;
+    font-family: 'Open Sans'; }
+  .fifth-section .fifth-section-img img {
+    width: 500px; }
