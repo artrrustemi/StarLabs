@@ -1,0 +1,74 @@
+.seventh-section {
+  text-align: center; }
+  .seventh-section h3 {
+    color: var(--main-color);
+    font-family: var(--main-color);
+    font-family: 'Open Sans'; }
+  .seventh-section h1 {
+    color: var(--black);
+    font-family: 'Open Sans'; }
+  .seventh-section .payment-package-section {
+    width: 100%;
+    height: 50%;
+    display: flex; }
+    .seventh-section .payment-package-section .payment-package-card {
+      margin: 0 auto;
+      border: solid 1px var(--lightGrey);
+      width: 30%;
+      height: 100%;
+      border-radius: 0.5rem; }
+      .seventh-section .payment-package-section .payment-package-card .card-details {
+        display: inline; }
+        .seventh-section .payment-package-section .payment-package-card .card-details h1 {
+          display: block;
+          font-family: 'Open Sans';
+          font-size: 16px;
+          font-weight: normal; }
+      .seventh-section .payment-package-section .payment-package-card .card-txt {
+        width: 80%;
+        height: 40%;
+        background-color: white;
+        margin: 0 auto;
+        border-bottom: solid 1px var(--lightGrey); }
+        .seventh-section .payment-package-section .payment-package-card .card-txt h2 {
+          padding-top: 20px;
+          color: var(--main-color);
+          font-family: 'Open Sans'; }
+        .seventh-section .payment-package-section .payment-package-card .card-txt h1 {
+          color: var(--black);
+          font-family: 'Open Sans';
+          font-size: 40px;
+          margin-bottom: 0; }
+        .seventh-section .payment-package-section .payment-package-card .card-txt h3 {
+          color: var(--fourth-color);
+          font-family: 'Open Sans';
+          margin: 0;
+          padding: 0; }
+  .seventh-section .slider-bottom {
+    padding-top: 100px;
+    display: flex; }
+    .seventh-section .slider-bottom .sliderImg {
+      text-align: left; }
+      .seventh-section .slider-bottom .sliderImg img {
+        width: 175px;
+        border-radius: 100%; }
+    .seventh-section .slider-bottom .slider-txt {
+      text-align: left;
+      padding-left: 30px; }
+      .seventh-section .slider-bottom .slider-txt h1 {
+        font-size: 20px;
+        font-style: italic;
+        color: var(--fourth-color);
+        font-weight: normal;
+        font-family: 'Open Sans'; }
+      .seventh-section .slider-bottom .slider-txt h2 {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: 'Open Sans';
+        font-weight: bold; }
+
+.slider2Img {
+  border-radius: 100% !important; }
+
+.dispalyflex {
+  display: flex !important; }

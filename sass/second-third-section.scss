@@ -1,0 +1,52 @@
+.container2{
+    width: 70%;
+    margin: 0 auto;
+    .second-section{
+
+        .second-section-txt{
+            text-align: center;
+            width:45%;
+            margin: 0 auto;
+            p{
+                color: var(--main-color);
+                font-weight: bold;
+                font-family: 'Open Sans';
+            }
+            h1{
+                font-weight: bold;
+                font-family: 'Open Sans';
+            }
+        }
+    }
+
+    .third-section{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        .card{
+            height: 100%;
+            margin-top: 30px;
+            align-items: center;
+            text-align: center;
+            img{
+                width: 200px;
+            }
+            h1{
+                font-family: 'Open Sans';
+                font-size: 25px;
+            }
+            p{
+                color: var(--fourth-color);
+                font-family: 'Open Sans';
+            }
+            .card-txt{
+                height: 50%;
+                width: 70%;
+                margin-left: 15%
+            }
+            .card-img{
+                height: 50%;
+            }
+        }
+    }
+}

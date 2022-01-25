@@ -1,0 +1,38 @@
+.main-section{
+    background-color: var(--main-color);
+    height: 40vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 10 !important;
+    // z-index: -1 !important;
+}
+.svg{
+    border: none;
+    // left: 0px;
+    // top: 0px;
+    // margin-top: -10px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+// .fade {
+//     -webkit-animation-name: fade;
+//     -webkit-animation-duration: 1.5s;
+//     animation-name: fade;
+//     animation-duration: 1.5s;
+//   }
+//   @-webkit-keyframes fade {
+//     from {opacity: .4} 
+//     to {opacity: 1}
+//   }
+  
+//   @keyframes fade {
+//     from {opacity: .4} 
+//     to {opacity: 1}
+//   }
+.active {
+    background-color: #717171;
+}  
+ 
