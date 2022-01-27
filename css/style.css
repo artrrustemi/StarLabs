@@ -18,6 +18,17 @@ html {
     height: 45vh; } }
 
 @media only screen and (max-width: 1100px) {
+  .modal-content {
+    display: flex;
+    flex-direction: column; }
+    .modal-content .modal-img {
+      width: 90% !important; }
+    .modal-content .modal-header {
+      width: 90% !important; }
+      .modal-content .modal-header .modal-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
   .menu-slider .slider-img {
     width: 100% !important; }
   .footer {
@@ -37,7 +48,7 @@ html {
   .slider {
     margin-top: 150px !important; }
   .container2 .second-section .second-section-txt {
-    width: 100%; }
+    width: 100% !important; }
   .third-section {
     display: flex;
     flex-direction: column; }
@@ -92,10 +103,21 @@ html {
     .footer .footer-info .footer-section {
       padding: 0px; }
   .footer .copyright {
-    height: 22vh;
     margin-top: 30px; } }
 
 @media screen and (max-width: 375px) {
+  .modal-content {
+    width: 90% !important;
+    display: flex;
+    flex-direction: column; }
+    .modal-content .modal-img {
+      width: 90% !important; }
+    .modal-content .modal-header {
+      width: 90% !important; }
+      .modal-content .modal-header .modal-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
   .eighth-section {
     height: 80vh; }
   .navbar a:not(:first-child) {
@@ -161,7 +183,9 @@ html {
       display: flex;
       flex-direction: column; }
       .footer .footer-info .footer-section {
-        width: 100% !important; } }
+        width: 100% !important; }
+  .slider {
+    margin-top: 150px !important; } }
 
 @media screen and (max-width: 630px) {
   .main-section .container .header-img {
@@ -308,7 +332,6 @@ html {
   background-color: #717171; }
 
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -319,13 +342,18 @@ html {
   background-color: var(--main-color);
   color: var(--secondary-color);
   cursor: pointer;
-  padding: 10px;
-  border-radius: 100%; }
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 50px;
+  height: 60px;
+  width: 60px; }
 
 #myBtn:hover {
   opacity: 0.9; }
 
 .button {
+  margin-bottom: 15px;
   border: var(--secondary-color) 2px solid;
   border-radius: 2rem;
   background-color: var(--main-color);
@@ -353,7 +381,7 @@ html {
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 15px;
-  margin: 0 auto;
+  margin: 15px auto;
   text-align: center; }
   .buttonCenter:hover {
     cursor: pointer;
@@ -490,7 +518,8 @@ html {
     .fourth-section .menu-slider .slider-img {
       width: 50%; }
       .fourth-section .menu-slider .slider-img img {
-        width: 80%; }
+        width: 80%;
+        padding-bottom: 15px; }
     .fourth-section .menu-slider .menu-slider-txt {
       width: 50%;
       text-align: initial; }
@@ -518,6 +547,81 @@ html {
   border-bottom: solid 3px var(--main-color) !important;
   color: var(--main-color) !important; }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* Could be more or less, depending on screen size */ }
+  .modal-content .modal-img {
+    width: 50%;
+    margin: auto; }
+    .modal-content .modal-img img {
+      width: 100%; }
+  .modal-content .modal-header {
+    text-align: left;
+    margin: 0 auto;
+    width: 40%; }
+    .modal-content .modal-header h1 {
+      width: max-content;
+      font-family: 'Open Sans';
+      color: var(--black);
+      border-bottom: var(--main-color) solid 2px; }
+    .modal-content .modal-header h2 {
+      color: var(--fourth-color);
+      font-family: 'Open Sans';
+      margin: 0; }
+    .modal-content .modal-header p {
+      font-family: 'Open Sans';
+      color: var(--black); }
+    .modal-content .modal-header li {
+      font-family: 'Open Sans';
+      color: var(--main-color); }
+      .modal-content .modal-header li span {
+        color: var(--black); }
+    .modal-content .modal-header .modal-buttons {
+      width: 100%;
+      display: flex; }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
 li {
   color: var(--main-color); }
 
@@ -538,7 +642,8 @@ li span {
     list-style-type: square;
     font-family: 'Open Sans'; }
   .fifth-section .fifth-section-img img {
-    width: 500px; }
+    width: 500px;
+    padding-bottom: 15px; }
 
 @keyframes bloom1 {
   0% {
@@ -607,7 +712,8 @@ li span {
   .txt-under-video-div .txt-under-video {
     font-family: 'Open Sans';
     color: var(--fourth-color);
-    font-weight: normal; }
+    font-weight: normal;
+    padding-bottom: 15px; }
 
 .seventh-section {
   text-align: center; }
@@ -678,7 +784,7 @@ li span {
         font-family: 'Open Sans';
         font-weight: bold; }
 
-.slider2Img {
+.slider2Img img {
   border-radius: 100% !important; }
 
 .dispalyflex {
@@ -725,20 +831,23 @@ li span {
         .eighth-section .contacform .contact-txt .privacyPolicy input {
           margin: 0;
           width: 20px; }
-      .eighth-section .contacform .contact-txt .emailButton {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px 0;
-        border-radius: 3rem;
-        color: var(--secondary-color);
-        font-family: 'Open Sans';
-        background-color: var(--main-color);
-        border: var(--main-color) 2px solid;
-        font-weight: bold; }
-        .eighth-section .contacform .contact-txt .emailButton:hover {
-          background-color: var(--secondary-color);
-          color: var(--main-color);
-          transition: 0.5s ease; }
+      .eighth-section .contacform .contact-txt .buttonsdiv {
+        width: 100%;
+        padding-bottom: 20px; }
+        .eighth-section .contacform .contact-txt .buttonsdiv .emailButton {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px 0;
+          border-radius: 3rem;
+          color: var(--secondary-color);
+          font-family: 'Open Sans';
+          background-color: var(--main-color);
+          border: var(--main-color) 2px solid;
+          font-weight: bold; }
+          .eighth-section .contacform .contact-txt .buttonsdiv .emailButton:hover {
+            background-color: var(--secondary-color);
+            color: var(--main-color);
+            transition: 0.5s ease; }
 
 .footer {
   width: 100%;
@@ -773,6 +882,9 @@ li span {
     width: 100%;
     text-align: center; }
     .footer .copyright h1 {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin: 0;
       color: var(--fifth-color);
       font-family: 'Open Sans';
       font-size: 15px;
@@ -784,3 +896,35 @@ li span {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 50px; }
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; }
+  .loader span {
+    width: 25px;
+    height: 25px;
+    margin: 0.5px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
+    .loader span:nth-child(2) {
+      animation-delay: 0.2s; }
+    .loader span:nth-child(4) {
+      animation-delay: 0.4s; }
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px); } }

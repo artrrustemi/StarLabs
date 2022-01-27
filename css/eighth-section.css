@@ -1,0 +1,58 @@
+.eighth-section {
+  width: 100%; }
+  .eighth-section .contacform {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    background-color: var(--fifth-color);
+    border-radius: 1rem;
+    text-align: center; }
+    .eighth-section .contacform .contact-txt {
+      width: 57%;
+      margin: 0 auto; }
+      .eighth-section .contacform .contact-txt p {
+        padding-top: 30px;
+        color: var(--main-color);
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 13px; }
+      .eighth-section .contacform .contact-txt h1 {
+        color: var(--black);
+        font-family: 'Open Sans'; }
+      .eighth-section .contacform .contact-txt input {
+        width: 80%;
+        height: 50px;
+        border: solid 1px var(--lightGrey);
+        border-radius: 0.2rem;
+        padding-left: 20px; }
+      .eighth-section .contacform .contact-txt .privacyPolicy {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+        align-items: center; }
+        .eighth-section .contacform .contact-txt .privacyPolicy h1 {
+          font-size: 10px; }
+        .eighth-section .contacform .contact-txt .privacyPolicy input {
+          margin: 0;
+          width: 20px; }
+      .eighth-section .contacform .contact-txt .buttonsdiv {
+        width: 100%;
+        padding-bottom: 20px; }
+        .eighth-section .contacform .contact-txt .buttonsdiv .emailButton {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px 0;
+          border-radius: 3rem;
+          color: var(--secondary-color);
+          font-family: 'Open Sans';
+          background-color: var(--main-color);
+          border: var(--main-color) 2px solid;
+          font-weight: bold; }
+          .eighth-section .contacform .contact-txt .buttonsdiv .emailButton:hover {
+            background-color: var(--secondary-color);
+            color: var(--main-color);
+            transition: 0.5s ease; }

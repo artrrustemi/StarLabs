@@ -1,0 +1,14 @@
+:root {
+  --main-color: #5f4dee;
+  --secondary-color: #fff;
+  --third-color:#e6e6e6;
+  --fourth-color:#555;
+  --fifth-color:#f3f7fd;
+  --black:#333;
+  --lightGrey:rgb(202, 202, 202); }
+
+body {
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }

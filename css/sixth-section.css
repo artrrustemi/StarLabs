@@ -65,4 +65,5 @@
   .txt-under-video-div .txt-under-video {
     font-family: 'Open Sans';
     color: var(--fourth-color);
-    font-weight: normal; }
+    font-weight: normal;
+    padding-bottom: 15px; }
