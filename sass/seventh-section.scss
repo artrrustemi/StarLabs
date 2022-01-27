@@ -95,7 +95,9 @@
     }
 }
 .slider2Img{
-    border-radius: 100% !important;
+    img{
+       border-radius: 100% !important; 
+    }
 }
 .dispalyflex{
     display: flex !important;

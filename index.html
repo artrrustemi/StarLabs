@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Tivo</title>
 </head>
 <body>
+    
     <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
         <i class="fa fa-bars"  style="display: block; text-decoration: none;" id="hamburger-menu"></i>
         <i class="fa fa-times"  style="display: none;" id="x" ></i>
@@ -128,15 +131,15 @@
             </div>
             <div class="container">
                 <div class="menu">
-                    <div class="menu-item activeMenu"><i class='bx bx-list-ul' style="font-size:30px; padding-right: 5px; margin-top: 5px;"></i> List Builder</div>
-                    <div class="menu-item"><i class='bx bx-mail-send'></i> Campaigns</div>
-                    <div class="menu-item"><i class="fa fa-bar-chart" style="font-size:20px; padding-right: 5px;"></i>Analytics</div>
+                    <div id="menuItem1" class="menu-item activeMenu"  onclick="sliderImg1()"><i class='bx bx-list-ul' style="font-size:30px; padding-right: 5px; margin-top: 5px;"></i> List Builder</div>
+                    <div id="menuItem2" class="menu-item"  onclick="sliderImg2()"><i class='bx bx-mail-send'></i> Campaigns</div>
+                    <div id="menuItem3" class="menu-item"  onclick="sliderImg3()"><i class="fa fa-bar-chart" style="font-size:20px; padding-right: 5px;"></i>Analytics</div>
                 </div>
             </div>
 
             <div class="container2">
-                <div class="menu-slider">
-                    <div class="slider-img">
+                <div class="menu-slider" id="slider1">
+                    <div class="slider-img" >
                         <img src="./images/features-1.png" alt="">
                     </div>
                     <div class="menu-slider-txt">
@@ -147,9 +150,77 @@
                             <li><span>  Manage forms and landing pages for your services</span></li>
                             <li><span> Add and remove subscribers using the control panel</span></li>
                         </ul>
-                        <div class="button">LIGHTBOX</div>
+                        <div class="button" id="myBtnM">LIGHTBOX</div>
                     </div>
                 </div>
+
+
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <!-- <p>Some text in the Modal..</p> -->
+                    <div class="modal-img">
+                        <img src="./images/features-1.png" alt="">
+                    </div>
+                    
+                    <div class="modal-header">
+                        <h1>List Building</h1>
+                        <h2>Core service</h2>
+                        <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
+                        <li><span>List building framework</span></li>
+                        <li><span>Easy database browsing</span></li>
+                        <li><span>User administration</span></li>
+                        <li><span>Automate user signup</span></li>
+                        <li><span>Quick formatting tools</span></li>
+                        <li><span>Fast email checking</span></li>
+                        <div class="modal-buttons">
+                            <div class="buttonCenter">SIGN UP</div>
+                            <div class="buttonCenter">BACK</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                </div>
+
+
+
+                <div class="menu-slider" id="slider2" style="display: none;">
+                    <div class="slider-img" >
+                        <img src="./images/features-2.png" alt="">
+                    </div>
+                    <div class="menu-slider-txt">
+                        <h1>Campaigns Monitoring Tools</h1>
+                        <p>Campaigns monitoring is a feature we've developed since the beginning because it's at the core of Tivo and basically to any marketing activity focused on results.</p>
+                        <ul>
+                            <li><span>Easily plan campaigns and schedule their starting date</span></li>
+                            <li><span> Start campaigns and follow their evolution closely</span></li>
+                            <li><span> Evaluate campaign results and optimize future actions</span></li>
+                        </ul>
+                        <div class="button" id="myBtnM2">LIGHTBOX</div>
+                    </div>
+                </div>
+
+                <div class="menu-slider" id="slider3"  style="display: none;">
+                    <div class="slider-img" >
+                        <img src="./images/features-3.png" alt="">
+                    </div>
+                    <div class="menu-slider-txt">
+                        <h1>Analytics Control Panel</h1>
+                        <p>Analytics control panel is important for every marketing team so it's beed implemented from the begging and designed to produce reports based on very little input information.</p>
+                        <ul>
+                            <li><span>If you set it up correctly you will get acces to great intel</span></li>
+                            <li><span>Easy to integrate in your websites and landing pages</span></li>
+                            <li><span>The generated reports are important for your strategy</span></li>
+                        </ul>
+                        <div class="button" id="myBtnM3">LIGHTBOX</div>
+                    </div>
+                </div>
+
             </div>
 
             
@@ -246,7 +317,6 @@
                 <div class="slider-bottom">
                     <div class="dispalyflex">
                         <div class="mySlides fade">
-                            <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ; padding-top: 30px;" onclick="plusSlides(-1)"></i>
                             <div class="slider2Img">
                                 <img src="./images/testimonial-1.jpg" alt="">
                             </div>
@@ -254,12 +324,10 @@
                                 <h1>"I started to use Tivo with the free trial about a year ago and never stopped since then. It does all the repeating marketing tasks and allows me to focus on core development activities like new product research and design. I love it and recommend it to everyone."</h1>
                                 <h2>Jude Thorn - Online Marketer</h2>
                             </div>
-                            <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal;   height: 100%; margin: auto 0 ;  padding-top: 25px;" onclick="plusSlides(1)"></i>
                         </div>
                    
 
                     <div class="mySlides fade">
-                        <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;" onclick="plusSlides(-1)"></i>
                         <div class="slider2Img">
                             <img src="./images/testimonial-2.jpg" alt="">
                         </div>
@@ -267,11 +335,9 @@
                             <h1>"Awesome features for the money. I never thought such a low ammount of money would bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and delivered far less. Highly recommended to marketers focused on results."</h1>
                             <h2>Roy Smith - Developer</h2>
                         </div>
-                        <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal; height: 100%; margin: auto 0 ;  padding-top: 25px;" onclick="plusSlides(1)"></i>
                     </div>
 
                     <div class="mySlides fade">
-                        <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;" onclick="plusSlides(-1)"></i>
                         <div class="slider2Img">
                             <img src="./images/testimonial-3.jpg" alt="">
                         </div>
@@ -279,11 +345,9 @@
                             <h1>"Tivo is the best marketing automation app for small and medium sized business. It understands the mindset of young entrepreneurs and provides the necessary data for wise marketing decisions. Just give it a try and you will definitely not regret spending your time."</h1>
                             <h2>Marsha Singer - Online Marketer</h2>
                         </div>
-                        <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 25px;" onclick="plusSlides(1)"></i>
                     </div>
 
                     <div class="mySlides fade">
-                        <i class='bx bx-chevron-left' style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ;  padding-top: 30px;"onclick="plusSlides(-1)"></i>
                         <div class="slider2Img">
                             <img src="./images/testimonial-4.jpg" alt="">
                         </div>
@@ -291,7 +355,6 @@
                             <h1>"Tivo is one of the greatest marketing automation apps out there. I especially love the Reporting Tools module because it gives me such a great amount of information based on little amounts of input gathered in just few weeks of light weight usage. Recommended!"</h1>
                             <h2>Ronda Louis - Online Marketer</h2>
                         </div>
-                        <i class='bx bx-chevron-right'style="font-size: 100px; font-weight: normal;  height: 100%; margin: auto 0 ; padding-top: 25px;" ></i>
                     </div>
                 </div>
                 </div>
@@ -308,7 +371,10 @@
                             <input type="checkbox">
                             <h1>I've read and agree to Tivo's written Privacy Policy and Terms Conditions</h1>
                         </div>
-                        <div class="emailButton">SUBSCRIBE</div>
+                        <div class="buttonsdiv">
+                            <div class="emailButton">SUBSCRIBE</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -348,10 +414,12 @@
             <div class="copyright"><h1>Copyright © 2020 Template by Inovatik</h1></div>
         </div>
        
-        
+     <div class="loader">
+         <span></span><span></span><span></span>
+     </div>   
+     
 </body>
 </html>
-<script src="./js/main.js">
+<script src="./js/main.js"></script>
 
    
-</script>

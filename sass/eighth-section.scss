@@ -49,23 +49,28 @@
                 width: 20px;
             }
           }
-          .emailButton{
-              width: 80%;
-              margin: 0 auto;
-              padding: 20px 0;
-              border-radius: 3rem;
-              color: var(--secondary-color);
-              font-family: 'Open Sans';
-              background-color: var(--main-color);
-              border: var(--main-color) 2px solid;
-              font-weight: bold;
+            .buttonsdiv{
+                width: 100%;
+                padding-bottom: 20px;
+                .emailButton{
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    border-radius: 3rem;
+                    color: var(--secondary-color);
+                    font-family: 'Open Sans';
+                    background-color: var(--main-color);
+                    border: var(--main-color) 2px solid;
+                    font-weight: bold;
 
-              &:hover{
-                  background-color: var(--secondary-color);
-                  color: var(--main-color);
-                  transition: 0.5s ease;
-              }
-          }
+                    &:hover{
+                        background-color: var(--secondary-color);
+                        color: var(--main-color);
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+          
       }
     }
 }

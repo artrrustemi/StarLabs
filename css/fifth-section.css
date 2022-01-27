@@ -18,4 +18,5 @@ li span {
     list-style-type: square;
     font-family: 'Open Sans'; }
   .fifth-section .fifth-section-img img {
-    width: 500px; }
+    width: 500px;
+    padding-bottom: 15px; }
