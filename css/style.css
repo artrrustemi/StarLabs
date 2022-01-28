@@ -64,8 +64,7 @@ html {
     height: 120vh; }
   .fifth-section {
     display: flex;
-    flex-direction: column;
-    height: 70vh; }
+    flex-direction: column; }
     .fifth-section .fifth-section-img {
       padding-top: 20px; }
   .six-container {
@@ -99,13 +98,21 @@ html {
   .container2 {
     width: 80%; }
   .footer .footer-info {
-    width: 90%; }
+    width: 90% !important; }
     .footer .footer-info .footer-section {
       padding: 0px; }
+      .footer .footer-info .footer-section h1 {
+        font-size: 20px !important; }
+      .footer .footer-info .footer-section h2 {
+        font-size: 13px !important; }
+      .footer .footer-info .footer-section ul {
+        margin-left: -25px; }
   .footer .copyright {
     margin-top: 30px; } }
 
 @media screen and (max-width: 375px) {
+  .copyright h1 {
+    padding-bottom: 0px !important; }
   .modal-content {
     width: 90% !important;
     display: flex;
@@ -145,12 +152,12 @@ html {
   .six-container {
     height: 120vh; }
   .video {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .fifth-section {
     height: 115vh; }
     .fifth-section .fifth-section-img img {
@@ -237,7 +244,8 @@ html {
           text-decoration: none; } }
 
 .icon {
-  display: none; }
+  display: none;
+  font-size: 40px; }
 
 .navbar {
   margin-top: 15px;
